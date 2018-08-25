@@ -18,5 +18,10 @@ namespace PetManager {
         {
             Birthday = new DateTime(2010, 10, 10);
         }
+
+        public override int GetHashCode()
+        {
+            return Name.GetHashCode() + Breed.GetHashCode() + Birthday.GetHashCode();
+        }
     }
 }
