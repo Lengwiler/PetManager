@@ -31,7 +31,7 @@ namespace PetManager {
                 return object.Equals(obj, this);
             }
             var pet = (Pet)obj;
-            return Birthday.Equals(pet.Birthday) && string.Equals(this.Name, pet.Name) &&
+            return string.Equals(this.Name, pet.Name) && string.Equals(this.Name, pet.Name) &&
                    string.Equals(this.Breed, pet.Breed);
         }
     }
